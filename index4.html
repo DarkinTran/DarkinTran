@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Một số tricks và tips</title>
+        <meta charset="uft-8">
+        <style>
+            html, body {
+                margin: 0;
+            }
+            .box {
+                background-color: orange;
+                height: 100px;
+                display: flex;
+            }
+            h3 {
+                margin:auto;
+                position: relative;
+            }
+            h3::after {
+                content: "";
+                position: absolute;
+                right: -10px;
+                border-left: 1px solid #333;
+                height: 20px;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="box">
+            <h3>CENTER ME</h3>
+        </div>
+    </body>
+</html>
